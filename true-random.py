@@ -17,3 +17,4 @@ print(password_gen)
 # TODO
 # 1. Ask user if they would like to generate P/W or PIN.
 # Ask user if they would like to generate a new password.
+# Eventual integration of a pass phrase (multi word).
