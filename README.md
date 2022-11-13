@@ -9,8 +9,6 @@ At present it only does two things:
 1. Asks user for desires P/W length.
 2. Displays generated P/W of nLength.
 
-### What is in the pipeline for this program:
-
-Essentially what I wish to achieve with this program is the ability to allow users to decide whether they would like to generate an alpha-numeric p/w or a pin number. 
+Eventual generation of PINs and Multi-Word Passphrases is being worked in, at present I am also creating Objects as to abstract the key functions of the program into a couple of separate but detailed objects (Choosing what to generate and separate objects for each of the selections)
 
 > CAUTION: This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk. 
