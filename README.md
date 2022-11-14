@@ -1,14 +1,24 @@
 # Truly Random password generator
 
-A python CLI program that allows for the generation of truly secure and random passwords.
+A python CLI program that allows for the generation of truly secure and random PINs, passwords or passphrases.
 
-As you can see it is only a couple lines of code (as of 10 Nov only 7 lines) so the use of libraries really does allow developers to shrink the amount of code they need to write allowing for cleaner code bases. 
+A few changes have been made since the start:
 
-At present it only does two things:
+1. Each option has now been separated into their own respective functions, allowing for easy editing, omission and addition. 
+2. I have now figured out how to allow for the user to select between creating a PIN, password or passphrase.
 
-1. Asks user for desires P/W length.
-2. Displays generated P/W of nLength.
 
-Eventual generation of PINs and Multi-Word Passphrases is being worked in, at present I am also creating Objects as to abstract the key functions of the program into a couple of separate but detailed objects (Choosing what to generate and separate objects for each of the selections)
+> TO BE FIXED:
+> At present, with the current if statement ``` gen_choices()``` what is happening is that it cycles through the initial question multiple times. 
+> What I ***may*** have to do is turn it into a while loop? Not entirely sure yet, but functionally, the program works as intended. 
 
 > CAUTION: This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk. 
+
+
+### Screenshots:
+
+<img width="498" alt="Screen Shot 2022-11-14 at 12 21 59" src="https://user-images.githubusercontent.com/91287801/201659178-d08318e0-c011-40bf-9d23-a668867cad40.png">
+
+<img width="474" alt="Screen Shot 2022-11-14 at 12 22 08" src="https://user-images.githubusercontent.com/91287801/201659525-fc4e775e-c7fa-4b84-b46d-6a392a93f663.png">
+
+<img width="678" alt="Screen Shot 2022-11-14 at 12 22 19" src="https://user-images.githubusercontent.com/91287801/201659545-557241fe-9192-42ea-b867-82c8a667753b.png">
