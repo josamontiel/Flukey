@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/91287801/201664048-a7e31264-5a53-4990-b901-e2bca5abd998.png)
+
+
 # Truly Random password generator
 
 A python CLI program that allows for the generation of truly secure and random PINs, passwords or passphrases.
