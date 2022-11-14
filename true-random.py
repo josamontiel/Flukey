@@ -16,8 +16,7 @@ import secrets
 import string
 
 # Prompt user to make selection
-def choose_option():
-        return int(input("What would you like to generate?\n 1. A PIN number.\n 2. A Password.\n 3. A Passphrase. \n")) 
+choose_option = int(input("What would you like to generate?\n 1. A PIN number.\n 2. A Password.\n 3. A Passphrase. \n"))
     
 # Function for pin number
 def pin_gen():
@@ -46,9 +45,9 @@ def passphrase_gen():
 
 
 def gen_choices():
-        if choose_option() == int('1'):
+        if choose_option == int('1'):
                 return pin_gen()
-        elif choose_option() == int('2'):
+        elif choose_option == int('2'):
                 return password_gen()
         else: 
                 return passphrase_gen()
