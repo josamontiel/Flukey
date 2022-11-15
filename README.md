@@ -14,15 +14,15 @@ A few changes have been made since the start:
 ## What was fixed:
 - A bug that repeated the question when prompted. 
 
-## What I added:
-
-A progressbar animation for a little something extra
-
-<img width="642" alt="Screen Shot 2022-11-14 at 22 21 25" src="https://user-images.githubusercontent.com/91287801/201780401-6b79b235-d6d7-494c-a799-9f72eea4e139.png">
+## Screenshots:
 
 
+<img width="547" alt="Screen Shot 2022-11-15 at 11 53 57" src="https://user-images.githubusercontent.com/91287801/201913639-597e3db3-27a8-4df6-8459-cd07c724ffb8.png">
 
-example: if you selected option 2 (Password) you were then asked the question again and only after the second attempt would it execute the password_gen() function. 
+<img width="573" alt="Screen Shot 2022-11-15 at 11 54 13" src="https://user-images.githubusercontent.com/91287801/201913647-1b471248-07f3-4ef2-83c7-fd1d28725933.png">
+
+<img width="1000" alt="Screen Shot 2022-11-15 at 11 54 38" src="https://user-images.githubusercontent.com/91287801/201913665-2f49fb70-725d-4e4d-ac5f-40ff3b168984.png">
+
 
 > CAUTION: This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk. 
 
