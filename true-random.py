@@ -14,6 +14,8 @@
 #Library for generating random/secure numbers or letters
 import secrets
 import string
+# Install wordlist to remove dependency on local machine dictionary
+# import wordlist
 
 #libraries for progressbar
 from tqdm import tqdm
@@ -44,7 +46,7 @@ def password_gen():
         upper_alpha = string.ascii_uppercase + string.digits
     
         password = ''.join(secrets.choice(lower_alpha + upper_alpha) for i in range (password_len))
-        progress_bar() 
+        progress_bar()
         print("\nHere is your Password: \n\n\n" + password + "\n\n")
 
 # Function for passphrase
