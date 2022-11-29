@@ -1,17 +1,19 @@
 
-:closed_lock_with_key: :closed_lock_with_key: :closed_lock_with_key: :closed_lock_with_key: :closed_lock_with_key: :closed_lock_with_key:
-# Truly Random password generator
 
-A python CLI program that allows for the generation of truly secure and random PINs, passwords or passphrases.
+## :closed_lock_with_key: <center>Truly Random password generator</center> 
 
-A few changes have been made since the start:
 
-1. Each option has now been separated into their own respective functions, allowing for easy editing, omission and addition. 
-2. I have now figured out how to allow for the user to select between creating a PIN, password or passphrase.
+A python CLI program that allows for the generation of truly secure and random PINs, Passwords or Passphrases.
 
-### Outputs:
+### <center>Why an offline generator is important..</center>
 
-#### PIN Generator
+Depending on your threat model, you may not have a need for a PIN or Passphrase generator, but <ins>EVERYONE</ins> should use a password generator(***in conjunction with a password manager***). 
+
+
+
+## <center> Outputs:</center>
+
+### <center> PIN Generator</center>
 ```
 What would you like to generate?
 
@@ -30,7 +32,7 @@ Here is your PIN:
 5249438493
 ```
 
-#### Password generator
+### <center>Password generator</center>
 
 ```
 What would you like to generate?
@@ -50,7 +52,7 @@ Here is your Password:
 dFIoR91on3
 ```
 
-### Passphrase Generator
+### <center> Passphrase Generator </center>
 
 ```
 What would you like to generate?
@@ -81,7 +83,7 @@ Onychoid
 
 
 
-> CAUTION: This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk. 
+##  :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk. 
 
 
 
