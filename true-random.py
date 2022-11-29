@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 ##### TRUE RANDOM #####
 
 #Library for generating random/secure numbers or letters
@@ -46,7 +48,7 @@ def passphrase_gen():
         with open('/usr/share/dict/words') as f:
                 passphrase_len = int(input("\nHow many words: "))
                 words = [word.strip() for word in f]
-                passphrase = ' '.join(secrets.choice(words) for i in range(passphrase_len))
+                passphrase = ' \n'.join(secrets.choice(words) for i in range(passphrase_len))
                 progress_bar() 
                 print(f"\nHere is your Passphrase: \n\n\n{passphrase.title()}\n\n")
                 # create_text_file()
