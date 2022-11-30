@@ -1,6 +1,6 @@
 
 
-## :closed_lock_with_key: <center>Truly Random password generator</center> 
+## :closed_lock_with_key: <center>Truly Random password generator</center> :closed_lock_with_key:
 
 
 A python CLI program that allows for the generation of truly secure and random PINs, Passwords or Passphrases.
