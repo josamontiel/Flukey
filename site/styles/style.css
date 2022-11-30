@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.abstract > p {
+  text-indent: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
