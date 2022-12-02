@@ -43,13 +43,33 @@ What would you like to generate?
 
 2
 
-Length of password: 10
-Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.61it/s]
+Length of password: 24
+Would you like to include special characters? (Y/N): Y
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.26it/s]
 
 Here is your Password: 
 
 
-dFIoR91on3
+yvccSV<^W3>\.-'%;_c+'{|-
+```
+
+```
+What would you like to generate?
+
+ (1) PIN number
+ (2) Password
+ (3) Passphrase
+
+2
+
+Length of password: 24
+Would you like to include special characters? (Y/N): N
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.31it/s]
+
+Here is your Password: 
+
+
+t2Ak1ZrGcYIpIRidRbvwt0ak
 ```
 
 ### <center> Passphrase Generator </center>
