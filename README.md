@@ -1,19 +1,30 @@
 
 
-## :closed_lock_with_key: <center>Truly Random password generator</center> :closed_lock_with_key:
+## :closed_lock_with_key: Truly Random password generator :closed_lock_with_key:
+
+## Abstract:
+Using Python script you can generate completely random and secure: PINs, Passwords and multi-word Passphrases of any length you choose. Using the script allows you to choose them completely at random without your intervention.
+
+## Introduction
+
+For years, many of use have lived the same life with respect to how we operate online: We use the same passwords for multiple accounts for months/years, eventually forgetting and having to reset it. If you are like I was, then your 'new' password was just a variation of the old one with some slight modification. Depending on the site or service you sre creating a password for, they may ask for your lock to meet certain requirements (minimum of 8 characters long, include at least 1 numbers and special character... seem familiar?) There is a good reason for this, entropy.
+
+> Password Entropy is a measurement of difficulty or 'randomness!'
+
+The more letters (upper and lowercase), numbers and special characters (?/!@#$%...) you add, the harder it makes it for a hacker to [brute force attack](https://en.wikipedia.org/wiki/Brute-force_attack) your account and gain access to your sensitive data. 
+
+#### Let's take a look at some length examples and their strengths:
 
 
-A python CLI program that allows for the generation of truly secure and random PINs, Passwords or Passphrases.
+<img title="Entropy guide" alt="A chart detailing length and strength of passwords" src="https://external-preview.redd.it/2l9o6Gro5JI7nZATK4kY_78KSy7HkXmWxUXnoks8uhw.jpg?auto=webp&s=a676126d5be7bd3fc5534523f9a0ca81b0dcb9a5">
 
-### <center>Why an offline generator is important..</center>
+> Notice with just lowercase letters it would take hackers 23Mln years to hack your accounts/data when your lock is 18 characters long... 
+> 
+> A word of caution though, as computers and software advance, these times will shorten drastically. Notice how a lock of only 8 characters, being mixed cased and including numbers, only takes 1 hour to crack. That is scary!
 
-Depending on your threat model, you may not have a need for a PIN or Passphrase generator, but <ins>EVERYONE</ins> should use a password generator(***in conjunction with a password manager***). 
+As you can see in the above chart, the more characters in your lock, the harder it makes it for hackers to use hacking software to brute force your data/accounts. Even with just numbers, it would take 9 months for a hacker to crack it when the lock is at least 18 numbers long. This will only increase when you begin to add, letters and symbols. Even adding one or two symbols increases your password entropy drastically.
 
-
-
-## <center> Outputs:</center>
-
-### <center> PIN Generator</center>
+### PIN Generator: 
 ```
 What would you like to generate?
 
@@ -32,7 +43,7 @@ Here is your PIN:
 5249438493
 ```
 
-### <center>Password generator</center>
+### Password generator: 
 
 ```
 What would you like to generate?
@@ -72,7 +83,7 @@ Here is your Password:
 t2Ak1ZrGcYIpIRidRbvwt0ak
 ```
 
-### <center> Passphrase Generator </center>
+### Passphrase Generator:
 
 ```
 What would you like to generate?
@@ -101,9 +112,4 @@ Sultam
 Onychoid
 ```
 
-
-
-##  :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk. 
-
-
-
+## :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk.
