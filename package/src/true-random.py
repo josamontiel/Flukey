@@ -33,14 +33,24 @@ def pin_gen():
 # Function for password
 def password_gen():
         password_len = int(input("\nLength of password: "))
+        with_or_without_special_characters = input("Would you like to include special characters? (Y/N): ")
 
         lower_alpha = string.ascii_lowercase 
         upper_alpha = string.ascii_uppercase
         numbers = string.digits
+        special_chars = string.punctuation
 
-        password = ''.join(secrets.choice(lower_alpha + upper_alpha + numbers)  for i in range (password_len))
+        password_without_spec_chars = ''.join(secrets.choice(lower_alpha + upper_alpha + numbers)  for i in range (password_len))
+        password_with_spec_chars = ''.join(secrets.choice(password_without_spec_chars + special_chars)  for i in range (password_len))
+        
+        def yes_or_no():
+            if with_or_without_special_characters == "Y":
+                return password_with_spec_chars
+            else:
+                return password_without_spec_chars
+            
         progress_bar() 
-        print(f"\nHere is your Password: \n\n\n{password}\n\n")
+        print(f"\nHere is your Password: \n\n\n{yes_or_no()}\n\n")
         # create_text_file()
 
 # Function for passphrase
