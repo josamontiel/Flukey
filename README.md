@@ -3,7 +3,7 @@
 ## :closed_lock_with_key: Truly Random password generator :closed_lock_with_key:
 
 ## Abstract:
-Using Python script you can generate completely random and secure: PINs, Passwords and multi-word Passphrases of any length you choose. Using the script allows you to choose them completely at random without your intervention.
+Using Python script you can generate completely random and secure: PINs, Passwords and multi-word Passphrases of any length you choose. Using the script allows you to choose them completely at random without your influence.
 
 ## Introduction
 
