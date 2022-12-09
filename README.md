@@ -3,10 +3,9 @@
 ## :closed_lock_with_key: Truly Random password generator :closed_lock_with_key:
 
 ## Abstract:
-Using Python script you can generate completely random and secure: PINs, Passwords and multi-word Passphrases of any length you choose. Using the script allows you to choose them completely at random without your influence.
+Using Python script you can generate completely random and secure: PINs, Passwords and multi-word Passphrases of any length you choose. Using the script allows you to choose them completely at random without your intervention.
 
 ## Introduction
-
 For years, many of use have lived the same life with respect to how we operate online: We use the same passwords for multiple accounts for months/years, eventually forgetting and having to reset it. If you are like I was, then your 'new' password was just a variation of the old one with some slight modification. Depending on the site or service you sre creating a password for, they may ask for your lock to meet certain requirements (minimum of 8 characters long, include at least 1 numbers and special character... seem familiar?) There is a good reason for this, entropy.
 
 > Password Entropy is a measurement of difficulty or 'randomness!'
@@ -111,5 +110,29 @@ Geochronology
 Sultam 
 Onychoid
 ```
+### New features 
+
+#### qr code image generation:
+
+With this new feature, users will be able to turn their newly generated pass code into a qr code for easy transport. The qr code will only display a plaintext of the code. The qr code only containing plaintext will create a layer of security as there will be no other identifiers. So long as the user does not reuse passwords for multiple apps/sites, bad actors will have a hard time matching pass codes with accounts. 
+
+##### Code for qr code function
+```python
+import qrcode
+import qrcode.image.svg
+'''QR code generator which will be an option for users who generate a passcode'''
+
+
+img = qrcode.make("Testing qr code generator")
+
+type(img)
+
+img.save("test_file.png")
+```
+
+The above syntax will result in a qr code PNG image that stores the string "Testing qr code generator", if you would like to see it for yourself scan the qr code with your phone.
+
+![test_file](https://user-images.githubusercontent.com/91287801/206769041-e8129ba6-3bb0-4f3e-8b26-e05372d50af6.png)
+
 
 ## :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk.
