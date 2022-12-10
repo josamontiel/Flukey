@@ -117,22 +117,34 @@ Onychoid
 With this new feature, users will be able to turn their newly generated pass code into a qr code for easy transport. The qr code will only display a plaintext of the code. The qr code only containing plaintext will create a layer of security as there will be no other identifiers. So long as the user does not reuse passwords for multiple apps/sites, bad actors will have a hard time matching pass codes with accounts. 
 
 ##### Code for qr code function
-```python
-import qrcode
-import qrcode.image.svg
-'''QR code generator which will be an option for users who generate a passcode'''
+```
+What would you like to generate?
+
+ (1) PIN number
+ (2) Password
+ (3) Passphrase
+
+3
+
+How many words: 4
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.59it/s]
+
+Here is your Passphrase: 
 
 
-img = qrcode.make("Testing qr code generator")
+Almsman 
+Dampener 
+Depthen 
+Phalangic
 
-type(img)
 
-img.save("test_file.png")
+Would you like to save this on a QR code? (Y/N): y
 ```
 
-The above syntax will result in a qr code PNG image that stores the string "Testing qr code generator", if you would like to see it for yourself scan the qr code with your phone.
+This will result in a qr code PNG image that stores the string "Almsman Dampener Depthen Phalangic", if you would like to see it for yourself scan the qr code with your phone.
+<br>
 
-![test_file](https://user-images.githubusercontent.com/91287801/206769041-e8129ba6-3bb0-4f3e-8b26-e05372d50af6.png)
+![rename](https://user-images.githubusercontent.com/91287801/206874182-1c339144-dde5-4cfa-af8b-2174e07ff658.png)
 
 
 ## :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk.
