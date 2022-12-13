@@ -20,10 +20,11 @@ def progress_bar():
 	    time.sleep(0.01)
      
 
-      
+class QR_CODE:
+    pass
 
 # Prompt user to make selection
-choose_option = int(input("\nWhat would you like to generate?\n\n (1) PIN number\n (2) Password\n (3) Passphrase\n\n"))
+# choose_option = int(input("\nWhat would you like to generate?\n\n (1) PIN number\n (2) Password\n (3) Passphrase\n\n"))
     
 # Function for pin number
 def pin_gen():
@@ -46,9 +47,6 @@ def pin_gen():
         else:
             return 
     qr_gen()
-    
-    
-    # create_text_file()
 
 # Function for password
 def password_gen():
@@ -85,8 +83,6 @@ def password_gen():
             else:
                 return 
         qr_gen()
-       
-        # create_text_file()
 
 # Function for passphrase
 def passphrase_gen():
@@ -111,41 +107,34 @@ def passphrase_gen():
                 return 
         qr_gen()
                 
-                # create_text_file()
-
-
-
     
-    
-
-    
-def gen_choices():
+# def gen_choices():
     
       
-    c = choose_option
+#     c = choose_option
     
     
-    if c == int('1'):
-        return pin_gen()
-    elif c == int('2'):
-        return password_gen()
-    elif c == int('3'):
-        return passphrase_gen()
-    else:
-        return c
-    
-# def qr_gen():
-    
-#     save_to_qr = print(input("Would you like to save this on a QR code? (Y/N): "))
-    
-#     type(save_to_qr)
-    
-#     save_to_qr = qrcode.make(f"{}")
-    
-#     if save_to_qr == "Y" or "y":
-#         return save_to_qr.save("rename.png")
+#     if c == int('1'):
+#         return pin_gen()
+#     elif c == int('2'):
+#         return password_gen()
+#     elif c == int('3'):
+#         return passphrase_gen()
 #     else:
-#         return 
+#         return c
+# gen_choices()
 
-gen_choices()
+class EXECUTE():
+    one = int('1')
+    two = int('2')
+    three = int('3')
 
+choose_option = int(input("\nWhat would you like to generate?\n\n (1) PIN number\n (2) Password\n (3) Passphrase\n\n"))
+
+match choose_option:
+    case EXECUTE.one:
+        print(pin_gen())
+    case EXECUTE.two:
+        print(password_gen())
+    case EXECUTE.three:
+        print(passphrase_gen())    
