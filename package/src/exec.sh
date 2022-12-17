@@ -16,8 +16,11 @@ com
     separate true random into 3 files for separation of actions 
 instructions
 
-###################################################################
+<<help
+convert documentation into a help feature for the command line and allow for execution in the terminal
+help
 
+###################################################################
 pin=$(filename that corresponds with file)
 if [[arg==pin]]
 ./pin.py
@@ -26,7 +29,3 @@ else if [[arg==password]]
 else if [[arg==passphrase]]
 ./passphrase.py
 fi
-
-
-
-
