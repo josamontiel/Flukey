@@ -25,90 +25,120 @@ As you can see in the above chart, the more characters in your lock, the harder 
 
 ### PIN Generator: 
 ```
-What would you like to generate?
+        Welcome to True Random!!!
+-->Generate truly random PINs/Passwords/Passphrases<--
 
- (1) PIN number
- (2) Password
- (3) Passphrase
+Select an option below:
+-- PIN
 
-1
+-- Password
 
-Length of your new PIN: 10
-Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.16it/s]
+-- Passphrase
+           
+> pin
+
+Length of your new PIN: 12
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 88.63it/s]
 
 Here is your PIN: 
 
 
-5249438493
+820768192734
+
+
+Would you like to save this on a QR code? (Y/N): y
 ```
 
 ### Password generator: 
 
 ```
-What would you like to generate?
+        Welcome to True Random!!!
+-->Generate truly random PINs/Passwords/Passphrases<--
 
- (1) PIN number
- (2) Password
- (3) Passphrase
+Select an option below:
+-- PIN
 
-2
+-- Password
+
+-- Passphrase
+           
+> password
 
 Length of password: 24
-Would you like to include special characters? (Y/N): Y
-Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.26it/s]
+Would you like to include special characters? (Y/N): y
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 88.50it/s]
 
 Here is your Password: 
 
 
-yvccSV<^W3>\.-'%;_c+'{|-
+{z-&z;.#)#]g+3'*g(h$3p`]
+
+
+Would you like to save this on a QR code? (Y/N): y
 ```
 
 ```
-What would you like to generate?
+        Welcome to True Random!!!
+-->Generate truly random PINs/Passwords/Passphrases<--
 
- (1) PIN number
- (2) Password
- (3) Passphrase
+Select an option below:
+-- PIN
 
-2
+-- Password
+
+-- Passphrase
+           
+> password
 
 Length of password: 24
-Would you like to include special characters? (Y/N): N
-Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.31it/s]
+Would you like to include special characters? (Y/N): n
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 85.60it/s]
 
 Here is your Password: 
 
 
-t2Ak1ZrGcYIpIRidRbvwt0ak
+EaM8mpJGyzWE0yvEekyaVlkL
+
+
+Would you like to save this on a QR code? (Y/N): y
 ```
 
 ### Passphrase Generator:
 
 ```
-What would you like to generate?
+        Welcome to True Random!!!
+-->Generate truly random PINs/Passwords/Passphrases<--
 
- (1) PIN number
- (2) Password
- (3) Passphrase
+Select an option below:
+-- PIN
 
-3
+-- Password
 
-How many words: 10
-Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.38it/s]
+-- Passphrase
+           
+> passphrase
+
+How many words: 12
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 88.13it/s]
 
 Here is your Passphrase: 
 
 
-Incorporator 
-Settleable 
-Medicamentation 
-Notidanian 
-Balantidium 
-Flong 
-Pleasurehood 
-Geochronology 
-Sultam 
-Onychoid
+Unticketed 
+Duffer 
+Applaudable 
+Ajutment 
+Flaxseed 
+Thiocarbamic 
+Sundayproof 
+Bonelessness 
+Chiam 
+Wobbliness 
+Rostellarian 
+Assertrix
+
+
+Would you like to save this on a QR code? (Y/N): y
 ```
 ### New features 
 
@@ -118,33 +148,37 @@ With this new feature, users will be able to turn their newly generated pass cod
 
 ##### Code for qr code function
 ```
-What would you like to generate?
+        Welcome to True Random!!!
+-->Generate truly random PINs/Passwords/Passphrases<--
 
- (1) PIN number
- (2) Password
- (3) Passphrase
+Select an option below:
+-- PIN
 
-3
+-- Password
+
+-- Passphrase
+           
+> passphrase
 
 How many words: 4
-Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 84.59it/s]
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 86.10it/s]
 
 Here is your Passphrase: 
 
 
-Almsman 
-Dampener 
-Depthen 
-Phalangic
+Ferrado 
+Entomic 
+Incognito 
+Numismatician
 
 
 Would you like to save this on a QR code? (Y/N): y
 ```
 
-This will result in a qr code PNG image that stores the string "Almsman Dampener Depthen Phalangic", if you would like to see it for yourself scan the qr code with your phone.
+This will result in a qr code PNG image that stores the string "Ferrado Entomic Incognito Numismatician", if you would like to see it for yourself scan the qr code with your phone.
 <br>
 
-![rename](https://user-images.githubusercontent.com/91287801/206874182-1c339144-dde5-4cfa-af8b-2174e07ff658.png)
+![newfile](https://user-images.githubusercontent.com/91287801/208255474-7f31880d-ad38-413c-93ab-dabbb4286e80.png)
 
 
 ## :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk.
