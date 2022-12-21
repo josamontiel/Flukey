@@ -1,7 +1,7 @@
-import true_random
+from true_random import *
 
-
-def main_menu():
+if __name__ == '__main__':
+   def main_menu():
     print("""
         Welcome to True Random!!!
 -->Generate truly random PINs/Passwords/Passphrases<--
@@ -15,11 +15,11 @@ Select an option below:
            """)
     selection = input("> ").lower()
     if selection == 'pin':
-        return true_random.pin()
+        return pin()
     elif selection == 'password':
-        return true_random.password()
+        return password()
     elif selection == 'passphrase':
-        return true_random.passphrase()
+        return passphrase()
     else:
         print("Please make a valid selection!")
 
