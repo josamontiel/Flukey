@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-
-# import pydoc
+import asyncio
 
 # libs for randomization
 import secrets
@@ -27,7 +26,7 @@ def pin():
     pin_num = ''.join(secrets.choice(numbers) for i in range(int(pin_len)))
     progress_bar()
     print(f"\nHere is your PIN: \n\n\n{pin_num}\n\n")
-    qr_gen_file.qr_code_generate()
+    qr_gen_file.generate()
 
 
 def password():
@@ -40,28 +39,39 @@ def password():
     numbers = string.digits
     special_chars = string.punctuation
 
-    password_without_spec_chars = ''.join(secrets.choice(
-        lower_alpha + upper_alpha + numbers) for i in range(password_len))
-    password_with_spec_chars = ''.join(secrets.choice(
-        password_without_spec_chars + special_chars) for i in range(password_len))
+    if password_len <= 12:
+        print("""
+            Your password is pretty weak, 
+            this will increase the likelihood of your password being brute forced. 
 
-    def yes_or_no():
-        if with_or_without_special_characters == "Y" or with_or_without_special_characters == "y":
-            return password_with_spec_chars
+            Consider a longer password (Ideally more than 18 characters).
+                """)
+        to_continue = input("Would you like to continue anyway?(Y/N): ")
+        if to_continue.lower() == 'y':
+            def yes_or_no():
+                password_without_spec_chars = ''.join(secrets.choice(
+                    lower_alpha + upper_alpha + numbers) for i in range(password_len))
+                password_with_spec_chars = ''.join(secrets.choice(
+                    password_without_spec_chars + special_chars) for i in range(password_len))
+                if with_or_without_special_characters.lower() == "y":
+                    return password_with_spec_chars
+                else:
+                    return password_without_spec_chars
+            yes_or_no()
         else:
-            return password_without_spec_chars
+            return password()
 
     progress_bar()
     print(f"\nHere is your Password: \n\n\n{yes_or_no()}\n\n")
-    qr_gen_file.qr_code_generate()
+    qr_gen_file.generate()
 
 
 def passphrase():
     with open('/usr/share/dict/words') as f:
         passphrase_len = int(input("\nHow many words: "))
         words = [word.strip() for word in f]
-        passphrase = ' \n'.join(secrets.choice(words).title()
+        passphrase_gen = ' \n'.join(secrets.choice(words).title()
                                 for i in range(passphrase_len))
         progress_bar()
-        print(f"\nHere is your Passphrase: \n\n\n{passphrase}\n\n")
-        qr_gen_file.qr_code_generate()
+        print(f"\nHere is your Passphrase: \n\n\n{passphrase_gen}\n\n")
+        qr_gen_file.generate()
