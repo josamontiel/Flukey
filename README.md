@@ -140,12 +140,6 @@ Assertrix
 
 Would you like to save this on a QR code? (Y/N): y
 ```
-### New features 
-
-#### qr code image generation:
-
-With this new feature, users will be able to turn their newly generated pass code into a qr code for easy transport. The qr code will only display a plaintext of the code. The qr code only containing plaintext will create a layer of security as there will be no other identifiers. So long as the user does not reuse passwords for multiple apps/sites, bad actors will have a hard time matching pass codes with accounts. 
-
 ##### Code for qr code function
 ```
         Welcome to True Random!!!
@@ -181,4 +175,42 @@ This will result in a qr code PNG image that stores the string "Ferrado Entomic 
 ![newfile](https://user-images.githubusercontent.com/91287801/208255474-7f31880d-ad38-413c-93ab-dabbb4286e80.png)
 
 
+## Updates
+
+#### Warning message for passwords less than 14 characters:
+
+In an effort to get people to start using longer passwords, I have added in an error message that lets users know that a shorter password leaves them vulnerable to brute force attacks. 
+```
+        Welcome to True Random!!!
+-->Generate truly random PINs/Passwords/Passphrases<--
+
+Select an option below:
+-- PIN
+
+-- Password
+
+-- Passphrase
+           
+> password
+
+Length of password: 11
+Would you like to include special characters? (Y/N): n
+
+            Your password is pretty weak, 
+            this will increase the likelihood of your password being brute forced. 
+
+            Consider a longer password (Ideally more than 18 characters).
+                
+Would you like to continue anyway?(Y/N): y
+Loading…: 100%|██████████████████████████| 101/101 [00:01<00:00, 86.31it/s]
+
+Here is your Password: 
+
+
+uq8orKlZ0MW
+
+
+Would you like to save this on a QR code? (Y/N): n
+
+```
 ## :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk.
