@@ -39,6 +39,16 @@ def password():
     numbers = string.digits
     special_chars = string.punctuation
 
+    def yes_or_no():
+        password_without_spec_chars = ''.join(secrets.choice(
+            lower_alpha + upper_alpha + numbers) for i in range(password_len))
+        password_with_spec_chars = ''.join(secrets.choice(
+            password_without_spec_chars + special_chars) for i in range(password_len))
+        if with_or_without_special_characters.lower() == "y":
+            return password_with_spec_chars
+        else:
+            return password_without_spec_chars
+
     if password_len <= 12:
         print("""
             Your password is pretty weak, 
@@ -48,15 +58,6 @@ def password():
                 """)
         to_continue = input("Would you like to continue anyway?(Y/N): ")
         if to_continue.lower() == 'y':
-            def yes_or_no():
-                password_without_spec_chars = ''.join(secrets.choice(
-                    lower_alpha + upper_alpha + numbers) for i in range(password_len))
-                password_with_spec_chars = ''.join(secrets.choice(
-                    password_without_spec_chars + special_chars) for i in range(password_len))
-                if with_or_without_special_characters.lower() == "y":
-                    return password_with_spec_chars
-                else:
-                    return password_without_spec_chars
             yes_or_no()
         else:
             return password()
