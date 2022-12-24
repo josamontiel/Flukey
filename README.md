@@ -213,4 +213,9 @@ uq8orKlZ0MW
 Would you like to save this on a QR code? (Y/N): n
 
 ```
+
+#### CLI styling
+Using the 'click' library I was able to add some styling to the CLI:
+<img width="616" alt="Screenshot 2022-12-24 at 15 40 38" src="https://user-images.githubusercontent.com/91287801/209442972-6c3aeb6e-c08f-47be-a8b1-6fef1403693c.png">
+
 ## :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk.
