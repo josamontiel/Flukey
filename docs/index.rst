@@ -256,6 +256,11 @@ them vulnerable to brute force attacks.
 
 
    Would you like to save this on a QR code? (Y/N): n
+   
+CLI styling
+^^^^^^^^^^^
+Using the 'click' library I was able to add some styling to the CLI:
+.. image:: docs/CLI-styling.png
 
 .. _warning-warning-this-password-generator-is-not-field-tested-please-understand-that-if-you-decide-to-use-this-that-you-are-doing-so-at-your-own-risk:
 
