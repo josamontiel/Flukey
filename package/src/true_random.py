@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import asyncio
 
 # libs for randomization
 import secrets
@@ -11,6 +10,26 @@ from tqdm import tqdm
 import time
 
 import qr_gen_file
+import click
+
+all_colors = (
+    "black",
+    "red",
+    "green",
+    "yellow",
+    "blue",
+    "magenta",
+    "cyan",
+    "white",
+    "bright_black",
+    "bright_red",
+    "bright_green",
+    "bright_yellow",
+    "bright_blue",
+    "bright_magenta",
+    "bright_cyan",
+    "bright_white",
+)
 
 
 def progress_bar():
@@ -50,12 +69,12 @@ def password():
             return password_without_spec_chars
 
     if password_len <= 12:
-        print("""
+        click.echo(click.style("""
             Your password is pretty weak, 
             this will increase the likelihood of your password being brute forced. 
 
             Consider a longer password (Ideally more than 18 characters).
-                """)
+                """, fg=all_colors[1], bold=True))
         to_continue = input("Would you like to continue anyway?(Y/N): ")
         if to_continue.lower() == 'y':
             yes_or_no()
@@ -63,7 +82,7 @@ def password():
             return password()
 
     progress_bar()
-    print(f"\nHere is your Password: \n\n\n{yes_or_no()}\n\n")
+    click.echo(click.style(f"\nHere is your Password: \n\n\n{yes_or_no()}\n\n", fg=all_colors[-3]))
     qr_gen_file.generate()
 
 
@@ -71,8 +90,7 @@ def passphrase():
     with open('/usr/share/dict/words') as f:
         passphrase_len = int(input("\nHow many words: "))
         words = [word.strip() for word in f]
-        passphrase_gen = ' \n'.join(secrets.choice(words).title()
-                                for i in range(passphrase_len))
+        passphrase_gen = ' \n'.join(secrets.choice(words).title() for i in range(passphrase_len))
         progress_bar()
         print(f"\nHere is your Passphrase: \n\n\n{passphrase_gen}\n\n")
         qr_gen_file.generate()
