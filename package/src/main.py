@@ -1,9 +1,12 @@
 from true_random import *
 
-if __name__ == '__main__':
-   def main_menu():
-    print("""
-        Welcome to True Random!!!
+
+def main_menu():
+
+    click.echo(click.style("""
+    TRUE RANDOM: PASSCODE GENERATOR
+    """, blink=True, bold=True, fg=all_colors[5]))
+    click.echo(click.style("""
 -->Generate truly random PINs/Passwords/Passphrases<--
 
 Select an option below:
@@ -12,7 +15,8 @@ Select an option below:
 -- Password
 
 -- Passphrase
-           """)
+           """, fg=all_colors[2]))
+
     selection = input("> ").lower()
     if selection == 'pin':
         return pin()
@@ -21,7 +25,9 @@ Select an option below:
     elif selection == 'passphrase':
         return passphrase()
     else:
-        print("Please make a valid selection!")
+        print("!!!!PLEASE MAKE A VALID SELECTION!!!!")
+        time.sleep(2)
+        return main_menu()
 
 
 main_menu()
