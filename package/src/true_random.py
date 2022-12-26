@@ -44,7 +44,7 @@ def pin():
     numbers = string.digits
     pin_num = ''.join(secrets.choice(numbers) for i in range(int(pin_len)))
     progress_bar()
-    print(f"\nHere is your PIN: \n\n\n{pin_num}\n\n")
+    print(f"\nHere is your PIN:\n\n{pin_num}\n")
     qr_gen_file.generate()
 
 
@@ -53,16 +53,17 @@ def password():
     with_or_without_special_characters = input(
         "Would you like to include special characters? (Y/N): ")
 
-    lower_alpha = string.ascii_lowercase
-    upper_alpha = string.ascii_uppercase
+    characters = string.ascii_letters
     numbers = string.digits
     special_chars = string.punctuation
 
     def yes_or_no():
+
         password_without_spec_chars = ''.join(secrets.choice(
-            lower_alpha + upper_alpha + numbers) for i in range(password_len))
+            characters + numbers) for i in range(password_len))
         password_with_spec_chars = ''.join(secrets.choice(
             password_without_spec_chars + special_chars) for i in range(password_len))
+
         if with_or_without_special_characters.lower() == "y":
             return password_with_spec_chars
         else:
@@ -76,13 +77,14 @@ def password():
             Consider a longer password (Ideally more than 18 characters).
                 """, fg=all_colors[1], bold=True))
         to_continue = input("Would you like to continue anyway?(Y/N): ")
+
         if to_continue.lower() == 'y':
             yes_or_no()
         else:
             return password()
-
+        
     progress_bar()
-    click.echo(click.style(f"\nHere is your Password: \n\n\n{yes_or_no()}\n\n", fg=all_colors[-3]))
+    click.echo(click.style(f"\nHere is your Password:\n\n{yes_or_no()}\n", fg=all_colors[-3]))
     qr_gen_file.generate()
 
 
