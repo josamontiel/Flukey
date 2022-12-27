@@ -23,6 +23,14 @@ The more letters (upper and lowercase), numbers and special characters (?/!@#$%.
 
 As you can see in the above chart, the more characters in your lock, the harder it makes it for hackers to use hacking software to brute force your data/accounts. Even with just numbers, it would take 9 months for a hacker to crack it when the lock is at least 18 numbers long. This will only increase when you begin to add, letters and symbols. Even adding one or two symbols increases your password entropy drastically.
 
+<!--
+
+### Under the hood:
+
+
+Here i will speak on secrets library and strings library and their methods. 
+-->
+
 ### PIN Generator: 
 ```
         Welcome to True Random!!!
