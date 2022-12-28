@@ -23,14 +23,10 @@ The more letters (upper and lowercase), numbers and special characters (?/!@#$%.
 
 As you can see in the above chart, the more characters in your lock, the harder it makes it for hackers to use hacking software to brute force your data/accounts. Even with just numbers, it would take 9 months for a hacker to crack it when the lock is at least 18 numbers long. This will only increase when you begin to add, letters and symbols. Even adding one or two symbols increases your password entropy drastically.
 
-<!--
-
 ### Under the hood:
+Under the hood of this passcode generator are two main python libraries, ``secrets`` and ``string``, both of these libraries play a massive role in generating random strings of numbers, letters integers and words. The two main methods used in regard to the ``string`` library are the ``string.ascii_letters`` and the ``string.digits`` methods. When I first created this generator I was individually using a concatenated version of the ``string.ascii_letters`` method which consisted of ``string.ascii_uppercase + string.ascii_lowercase``, but using the former makes for cleaner code as we can do the same job in a shorter line of code. The use of these methods allows us to generate a string of letters (both uppercase and lowercase) and a string of numbers ranging from ``0-9``. As the project grew I decided to add in the ability to choose to add punctuation/special characters via the ``string.punctuation`` method, this allows for more entropy further reducing the probability of a successful brute force attack. There is also a method called ``string.printable`` which prints whitespace as well as numbers and letters, but I have not given it a test drive as of now. 
 
-
-Here i will speak on secrets library and strings library and their methods. 
--->
-
+When it comes to the random generation of these letters and numbers, ``secrets.choice()`` is the method in the ``secrets`` library that allows us to draw a random sequence of numbers and letters from the ``string`` library. 
 ### PIN Generator: 
 ```
         Welcome to True Random!!!
@@ -221,9 +217,4 @@ uq8orKlZ0MW
 Would you like to save this on a QR code? (Y/N): n
 
 ```
-
-#### CLI styling
-Using the 'click' library I was able to add some styling to the CLI:
-<img width="616" alt="Screenshot 2022-12-24 at 15 40 38" src="https://user-images.githubusercontent.com/91287801/209442972-6c3aeb6e-c08f-47be-a8b1-6fef1403693c.png">
-
 ## :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk.
