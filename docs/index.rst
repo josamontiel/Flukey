@@ -55,6 +55,12 @@ hacker to crack it when the lock is at least 18 numbers long. This will
 only increase when you begin to add, letters and symbols. Even adding
 one or two symbols increases your password entropy drastically.
 
+Under the hood:
+^^^^^^^^^^^^^^^
+Under the hood of this passcode generator are two main python libraries, ``secrets`` and ``string``, both of these libraries play a massive role in generating random strings of numbers, letters integers and words. The two main methods used in regard to the ``string`` library are the ``string.ascii_letters`` and the ``string.digits`` methods. When I first created this generator I was individually using a concatenated version of the ``string.ascii_letters`` method which consisted of ``string.ascii_uppercase + string.ascii_lowercase``, but using the former makes for cleaner code as we can do the same job in a shorter line of code. The use of these methods allows us to generate a string of letters (both uppercase and lowercase) and a string of numbers ranging from ``0-9``. As the project grew I decided to add in the ability to choose to add punctuation/special characters via the ``string.punctuation`` method, this allows for more entropy further reducing the probability of a successful brute force attack. There is also a method called ``string.printable`` which prints whitespace as well as numbers and letters, but I have not given it a test drive as of now. 
+
+When it comes to the random generation of these letters and numbers, ``secrets.choice()`` is the method in the ``secrets`` library that allows us to draw a random sequence of numbers and letters from the ``string`` library. 
+
 PIN Generator:
 ~~~~~~~~~~~~~~
 
@@ -259,7 +265,7 @@ them vulnerable to brute force attacks.
    
 CLI styling
 ^^^^^^^^^^^
-Using the 'click' library I was able to add some styling to the CLI:
+Using the ``click`` library I was able to add some styling to the CLI:
 
 .. image:: CLI-styling.png
 
