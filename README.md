@@ -217,4 +217,10 @@ uq8orKlZ0MW
 Would you like to save this on a QR code? (Y/N): n
 
 ```
+#### CLI Styling
+
+Using the ``click`` library I was able to add some styling to the CLI:
+
+![screenshot](/docs/CLI-styling.png)
+
 ## :warning: **Warning:** This password generator is not field tested, please understand that if you decide to use this that you are doing so at your own risk.
