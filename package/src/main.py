@@ -30,4 +30,5 @@ Select an option below:
         return main_menu()
 
 
-main_menu()
+if '__name__' == '__main__':
+    main_menu()
