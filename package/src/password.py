@@ -5,7 +5,7 @@ from shell_functionality import *
 
 def password():
     """
-    Password function has a coule of built-in functions:
+    Password function has a couple of built-in functions:
     - choosing between special chars in PWs or not
     - determining the amount of different password iterations you would like
     """
@@ -18,6 +18,13 @@ def password():
     special_chars = string.punctuation
 
     def yes_or_no():
+        """
+        This function allows for the selection of
+        passwords with or without special characters,
+        ideally one should always have special characters in their 
+        passwords but they are not necessary for strong passwords,
+        it just allows for better entropy with less characters 
+        """
         password_without_spec_chars = ''.join(secrets.choice(
             characters + numbers) for i in range(password_len))
         password_with_spec_chars = ''.join(secrets.choice(
@@ -46,3 +53,5 @@ def password():
             return password()
 
     progress_bar()
+    
+password()
