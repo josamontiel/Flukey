@@ -3,49 +3,26 @@
 # libs for randomization
 import secrets
 import string
-# libraries for progressbar
-from tqdm import tqdm
-import time
-# Library that allows for shell styling
-import click
+# # libraries for progressbar
+# from tqdm import tqdm
+# import time
 
-# colors for animations of the CLI when running the program
-all_colors = (
-    "black",
-    "red",
-    "green",
-    "yellow",
-    "blue",
-    "magenta",
-    "cyan",
-    "white",
-    "bright_black",
-    "bright_red",
-    "bright_green",
-    "bright_yellow",
-    "bright_blue",
-    "bright_magenta",
-    "bright_cyan",
-    "bright_white",
-)
-
-
-def progress_bar():
-    """
-    Progress bar animation
-    adds a progressbar which doesn't really serve a function to the program itself, but it does look cool.
-    """
-    for i in tqdm(range(101),
-                  desc="Loading…",
-                  ascii=False, ncols=75):
-        time.sleep(0.01)
+# def progress_bar():
+#     """
+#     Progress bar animation
+#     adds a progressbar which doesn't really serve a function to the program itself, but it does look cool.
+#     """
+#     for i in tqdm(range(101),
+#                   desc="Loading…",
+#                   ascii=False, ncols=75):
+#         time.sleep(0.01)
 
 
 def pin():
     pin_len = int(input("\nLength of your new PIN: "))
     numbers = string.digits
     pin_num = ''.join(secrets.choice(numbers) for i in range(int(pin_len)))
-    progress_bar()
+    # progress_bar()
     print(f"\nHere is your PIN:\n\n{pin_num}\n")
 
 
@@ -78,12 +55,12 @@ def password():
     they have selected is very short and increases the likelihood of being cracked
     '''
     if password_len <= 12:
-        click.echo(click.style("""
+        print("""
             Your password is pretty weak, 
             this will increase the likelihood of your password being brute forced. 
 
             Consider a longer password (Ideally more than 18 characters).
-                """, fg=all_colors[1], bold=True))
+                """)
         to_continue = input("Would you like to continue anyway?(Y/N): ")
 
         if to_continue.lower() == 'y':
@@ -91,7 +68,7 @@ def password():
         else:
             return password()
 
-    progress_bar()
+    # progress_bar()
 
     def amount_of_passwords():
         """
@@ -101,9 +78,9 @@ def password():
             passwords = ''
             for c in range(password_len):
                 passwords += yes_or_no()
-            click.echo(yes_or_no())
+            return yes_or_no()
 
-    click.echo(click.style(f"\nTA-DA:\n\n{amount_of_passwords()}\n", fg=all_colors[-3]))
+    print(f"\nTA-DA:\n\n{amount_of_passwords()}\n")
 
 
 
@@ -115,6 +92,6 @@ def passphrase():
     with open('/usr/share/dict/words') as f:
         passphrase_len = int(input("\nHow many words: "))
         words = [word.strip() for word in f]
-        passphrase_gen = ' \n'.join(secrets.choice(words).title() for i in range(passphrase_len))
-        progress_bar()
+        passphrase_gen = '\n'.join(secrets.choice(words).title() for i in range(passphrase_len))
+        # progress_bar()
         print(f"\nHere is your Passphrase: \n\n\n{passphrase_gen}\n\n")
