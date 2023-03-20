@@ -36,9 +36,15 @@
 
 import secrets
 import string
-import base64
-import pathlib
+import time
+import os
+import argparse
+import sys
+import subprocess
 
+def clear_screen(time:int):
+    time = time.sleep(5)
+    return os.system('clear')
 
 def PIN():
     """
@@ -48,10 +54,10 @@ def PIN():
     to provide that functionality
     """
     NUMBERS = string.digits
-    LENGTH = int(input("\nLENGTH OF DESIRED PIN: "))
+    LENGTH=int(input("\nLENGTH OF DESIRED PIN: "))
     PIN_NUM = ''.join(secrets.choice(NUMBERS) for _ in range(int(LENGTH)))
     print(f"\n\nHERE IS YOUR NEW PIN:\n\n{PIN_NUM}")
-    
+    clear_screen(time)
     
 def PASSWORD():
     """
@@ -63,6 +69,7 @@ def PASSWORD():
     LENGTH=int(input("enter desired password length: "))
     PASSWORD_GEN=''.join(secrets.choice(CHARACTERS) for _ in range(int(LENGTH)))
     print(f"\n\nHERE IS YOUR NEW PASSWORD:\n\n{PASSWORD_GEN}")
+    clear_screen(time)
     
 def PASSPHRASE():
     """
@@ -78,10 +85,12 @@ def PASSPHRASE():
         WORDS = [word.strip() for word in f]
         PASSPHRASE_GEN = '\n'.join(secrets.choice(WORDS).title() for _ in range(LENGTH))
         print(f"\nHere is your Passphrase: \n\n\n{PASSPHRASE_GEN}\n\n")
-
+    clear_screen(time)
     
 
 
-# PIN()
+PIN()
 # PASSWORD()
-PASSPHRASE()
+# PASSPHRASE()
+
+    
