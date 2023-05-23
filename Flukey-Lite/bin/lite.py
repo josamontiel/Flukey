@@ -35,6 +35,9 @@
 ################################################################################
 
 import secrets
+from secrets import (ascii_letters as letters, 
+              digits as numbers, 
+              punctuation as special_chars)
 import string
 import time
 import os
