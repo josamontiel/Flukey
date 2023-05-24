@@ -299,6 +299,7 @@ tqdm @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_2adqc
 traitlets @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_0dtilxc0bw/croot/traitlets_1671143889152/work
 transformers @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_0fwztwlw96/croot/transformers_1667921642940/work
 Twisted @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_daykstm3mh/croots/recipe/twisted_1659592770155/work
+typer==0.9.0
 typing_extensions @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_4b7xacf029/croot/typing_extensions_1669923792404/work
 ujson @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_cf44fbd5-5db0-48cf-86c4-c8d4e74d1cbbwhgckc99/croots/recipe/ujson_1657544919410/work
 Unidecode @ file:///tmp/build/80754af9/unidecode_1614712377438/work
