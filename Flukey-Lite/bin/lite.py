@@ -36,6 +36,7 @@
 
 # The code I used is from: https://codereview.stackexchange.com/questions/285058/truly-cryptographically-secure-password-generator-in-python-version-2
 
+
 import json
 import secrets
 import typer
