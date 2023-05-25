@@ -136,10 +136,12 @@ locket @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_81b
 lxml @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_1902c961-4bd2-4871-a3c5-70b7317a6521kpj7nz2o/croots/recipe/lxml_1657545138937/work
 lz4 @ file:///Users/builder/ci_310/lz4_1642617904470/work
 Markdown @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_90m_zl2p10/croot/markdown_1671541913695/work
+markdown-it-py==2.2.0
 MarkupSafe @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d4a9444f-bd4c-4043-b47d-cede33979b0fve7bm42r/croots/recipe/markupsafe_1654597878200/work
 matplotlib @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_9blu8uma0r/croot/matplotlib-suite_1677674320321/work
 matplotlib-inline @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_9ddl71oqte/croots/recipe/matplotlib-inline_1662014471815/work
 mccabe @ file:///opt/conda/conda-bld/mccabe_1644221741721/work
+mdurl==0.1.2
 mistune @ file:///Users/builder/ci_310/mistune_1642534169737/work
 mock @ file:///tmp/build/80754af9/mock_1607622725907/work
 mpmath==1.2.1
@@ -203,7 +205,7 @@ PyDispatcher==2.0.5
 pydocstyle @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_17qm6coxyl/croot/pydocstyle_1675221687004/work
 pyerfa @ file:///Users/builder/ci_310/pyerfa_1642535752787/work
 pyflakes @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_a87qrne4ps/croot/pyflakes_1674165135821/work
-Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+Pygments==2.15.1
 PyHamcrest @ file:///tmp/build/80754af9/pyhamcrest_1615748656804/work
 PyJWT @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_eec47dd9-fcc8-4e06-bbca-6138d11dbbcch6zasfc4/croots/recipe/pyjwt_1657544589510/work
 pylint @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b4nhjj9cv2/croot/pylint_1676919902809/work
@@ -243,6 +245,7 @@ regex @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_978e
 requests @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_516b78ce-034d-4395-b9b5-1d78c2847384qtnol99l/croots/recipe/requests_1657734628886/work
 requests-file @ file:///Users/ktietz/demo/mc3/conda-bld/requests-file_1629455781986/work
 requests-toolbelt @ file:///Users/ktietz/demo/mc3/conda-bld/requests-toolbelt_1629456163440/work
+rich==13.3.5
 rope @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_a1cscuw3z1/croot/rope_1676675020784/work
 Rtree @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_63tcmfd_qs/croot/rtree_1675157862667/work
 ruamel-yaml-conda @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_bam8guxx00/croot/ruamel_yaml_1667489733295/work
@@ -299,6 +302,7 @@ tqdm @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_2adqc
 traitlets @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_0dtilxc0bw/croot/traitlets_1671143889152/work
 transformers @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_0fwztwlw96/croot/transformers_1667921642940/work
 Twisted @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_daykstm3mh/croots/recipe/twisted_1659592770155/work
+typer==0.9.0
 typing_extensions @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_4b7xacf029/croot/typing_extensions_1669923792404/work
 ujson @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_cf44fbd5-5db0-48cf-86c4-c8d4e74d1cbbwhgckc99/croots/recipe/ujson_1657544919410/work
 Unidecode @ file:///tmp/build/80754af9/unidecode_1614712377438/work
