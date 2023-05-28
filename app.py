@@ -22,16 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-#################################################################################
-# FLUKEY LITE
-
-# The purpose of having a lite version of the app is purely for the super paranoid. 
-# Having a text user interface is great, it's so much better than having to depend 
-# on a GUI and has far less bloat. Allowing for almost identical functionality with 
-# this lighter version this will have less dependencies which means far more portable 
-# as it only uses standard libraries. 
-# 
-# Enjoy!
+################################################################################
 ################################################################################
 
 # The code I used is from: https://codereview.stackexchange.com/questions/285058/truly-cryptographically-secure-password-generator-in-python-version-2
