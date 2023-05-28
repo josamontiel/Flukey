@@ -45,12 +45,12 @@ from pathlib import Path
 from rich import print
 from rich.console import Console
 from rich.table import Table
-from string import ascii_lowercase, ascii_uppercase, digits, punctuation
+from string import ascii_lowercase as lowercase, ascii_uppercase as uppercase, digits, punctuation
 from typing import Any, List, Optional, Tuple
 from typing_extensions import Annotated
 
 RNG = secrets.SystemRandom()
-CATEGORIES = (ascii_lowercase, ascii_uppercase, digits, punctuation)
+CATEGORIES = (lowercase, uppercase, digits, punctuation)
 CATEGORY_NAMES = ()
 STYLES = tuple(
     "[{0}]{{}}[/{0}]".format(color) for color in ("magenta", "red", "cyan", "green")
@@ -319,7 +319,7 @@ def main(
     symbol: BOOLEANS[1] = True,
     uniform: BOOLEANS[2] = False,
     summary: BOOLEANS[3] = False,
-    analyze: BOOLEANS[4] = False,
+    analyze: BOOLEANS[4] = True,
     extensive: BOOLEANS[5] = False,
     redirect: REDIRECT = None,
 ) -> None:
