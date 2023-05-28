@@ -51,8 +51,8 @@ CHARACTER_STYLES = {
 }
 CHARACTER_STYLES["\\"] = "[green]\\\[/green]"
 HELP_MSGS = (
-    "length of the passwords to be generated",
-    "specifies the number of passwords to be generated",
+    "desired password length ",
+    "desired number of passwords generated",
     "determines if the passwords should contain unique characters only",
     "determines if the passwords should contain special characters",
     "determines if the characters in the passwords should be uniformly sampled",

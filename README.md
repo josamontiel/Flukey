@@ -1,10 +1,8 @@
-<!--Logo will go here-->
-
 # Flukey
 
-###### Generate Truly Random Passcodes Right in your Terminal
+> Generate Truly Random Passcodes Right in your Terminal
 
-**Not field tested only for demo (for now)**
+```Not field tested only for demo```
 
 ## Threat model
 
