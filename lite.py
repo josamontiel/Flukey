@@ -192,8 +192,10 @@ class CharacterPool:
 
 
 def generate_password(
-    length: int, unique: bool = False, symbol: bool = True, uniform: bool = False
-) -> str:
+    length: int, unique: bool = False, 
+    symbol: bool = True, 
+    uniform: bool = False
+    ) -> str:
     if length < 8 or unique and length > (94 if symbol else 62):
         raise ValueError(
             "argument `length` should be an `int` greater than or equal to 8, "
